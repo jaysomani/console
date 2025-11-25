@@ -186,3 +186,14 @@
         <Button size="s" on:click={apply} disabled={!localTags?.length}>Apply</Button>
     </svelte:fragment>
 </Modal>
+
+<style>
+    /* Allow dropdowns to overflow the modal */
+    :global(dialog) {
+        overflow: visible !important;
+    }
+
+    :global(dialog section) {
+        overflow: visible !important;
+    }
+</style>
